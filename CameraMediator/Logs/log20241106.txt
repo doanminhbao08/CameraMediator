@@ -1,0 +1,34 @@
+2024-11-06 08:05:43.029 +07:00 [INF] Starting up the application...
+2024-11-06 08:05:45.632 +07:00 [INF] Authentication: Client C21273C244 is accepted.
+2024-11-06 08:05:45.911 +07:00 [INF] Package: '/topic/online': {"device_id":"C21273C244","status":1}
+2024-11-06 08:31:27.913 +07:00 [INF] Starting up the application...
+2024-11-06 08:31:36.405 +07:00 [INF] Authentication: Client C21273C244 is accepted.
+2024-11-06 08:31:36.688 +07:00 [INF] Package: '/topic/online': {"device_id":"C21273C244","status":1}
+2024-11-06 08:31:40.287 +07:00 [INF] Authentication: Client 0ff990bb82f3465bac4128867cdd0a62 is accepted.
+2024-11-06 08:31:40.349 +07:00 [INF] Package: '/topic/detected/string': {"MsgId":"string","CameraId":"string","PersonId":"string===","PersonType":"string","Image":"string","DateTime":"string"}
+2024-11-06 08:31:41.231 +07:00 [INF] State: Message successfully sent to API.
+2024-11-06 08:40:38.372 +07:00 [INF] Authentication: Client 0a1293412f81482494fb7dffd802325c is accepted.
+2024-11-06 08:40:38.377 +07:00 [INF] Package: '/topic/detected/string': {"MsgId":"string","CameraId":"string","PersonId":"string===","PersonType":"string","Image":"string","DateTime":"string"}
+2024-11-06 08:40:38.548 +07:00 [INF] State: Message successfully sent to API.
+2024-11-06 08:42:55.620 +07:00 [INF] Authentication: Client 969c47e27d5547e0aa1f02269e3da760 is accepted.
+2024-11-06 08:42:55.641 +07:00 [INF] Package: '/topic/detected/string': {"MsgId":"string","CameraId":"string","PersonId":"string===","PersonType":"string","Image":"string","DateTime":"string"}
+2024-11-06 08:42:55.807 +07:00 [INF] State: Message successfully sent to API.
+2024-11-06 08:52:52.026 +07:00 [INF] Authentication: Client 064f7eb722c14e1eb4e3b0e3f0d619cf is accepted.
+2024-11-06 08:52:52.111 +07:00 [INF] Package: '/topic/detected/string': {"MsgId":"string","CameraId":"string","PersonId":"string===","PersonType":"string","Image":"string","DateTime":"string"}
+2024-11-06 08:52:52.256 +07:00 [INF] State: Message successfully sent to API.
+2024-11-06 08:56:20.380 +07:00 [INF] Starting up the application...
+2024-11-06 08:56:23.764 +07:00 [INF] Authentication: Client C21273C244 is accepted.
+2024-11-06 08:56:24.053 +07:00 [INF] Package: '/topic/online': {"device_id":"C21273C244","status":1}
+2024-11-06 08:56:36.081 +07:00 [INF] Authentication: Client C21024B964 is accepted.
+2024-11-06 08:56:36.184 +07:00 [INF] Package: '/topic/online': {"device_id":"C21024B964","status":1}
+2024-11-06 08:57:38.944 +07:00 [INF] Package: '/topic/detected/C21024B964': {"person_id":"","person_name":"","person_type":2,"mask":0,"date_time":1730858258,"time":"06112024085738","msg_id":"C21024B964-1730858258","image":"","camera_id":"C21024B964"}
+2024-11-06 08:57:39.358 +07:00 [INF] State: Message successfully sent to API.
+2024-11-06 08:58:07.755 +07:00 [INF] Package: '/topic/detected/C21024B964': {"person_id":"","person_name":"","person_type":2,"mask":0,"date_time":1730858286,"time":"06112024085806","msg_id":"C21024B964-1730858286","image":"","camera_id":"C21024B964"}
+2024-11-06 08:58:07.950 +07:00 [INF] State: Message successfully sent to API.
+2024-11-06 08:58:07.967 +07:00 [INF] Package: '/topic/detected/C21024B964': {"person_id":"2626894957171965952","person_name":"Nguyễn Thành Trung","person_type":0,"mask":0,"date_time":1730858287,"time":"06112024085807","msg_id":"C21024B964-1730858287","image":"","camera_id":"C21024B964"}
+2024-11-06 08:58:08.100 +07:00 [INF] State: Message successfully sent to API.
+2024-11-06 08:58:29.477 +07:00 [INF] Package: '/topic/detected/C21024B964': {"person_id":"2820259528656814080","person_name":"Nguyễn Ngọc Thành","person_type":0,"mask":0,"date_time":1730858309,"time":"06112024085829","msg_id":"C21024B964-1730858309","image":"","camera_id":"C21024B964"}
+2024-11-06 08:58:29.562 +07:00 [INF] State: Message successfully sent to API.
+2024-11-06 08:59:14.807 +07:00 [INF] Package: '/topic/online': {"device_id":"C21024B964","status":0}
+2024-11-06 08:59:18.893 +07:00 [INF] Authentication: Client C21024B964 is accepted.
+2024-11-06 08:59:18.932 +07:00 [INF] Package: '/topic/online': {"device_id":"C21024B964","status":1}

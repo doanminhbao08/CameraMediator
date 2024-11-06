@@ -1,0 +1,17 @@
+2024-11-04 17:26:53.009 +07:00 [INF] Starting up the application...
+2024-11-04 17:26:57.485 +07:00 [INF] Authentication: Client 69aa30a79d6e4b98ac279de20eb6fb7c is accepted.
+2024-11-04 17:26:57.770 +07:00 [INF] Package: '/topic/detected/string': {"MsgId":"string","CameraId":"string","PersonId":"string","PersonType":"444444","Image":"string","DateTime":"string"}
+2024-11-04 17:26:58.315 +07:00 [INF] State: Message successfully sent to API.
+2024-11-04 17:27:04.890 +07:00 [INF] Authentication: Client 78b1122c575245b2b5d89b3e2d06d207 is accepted.
+2024-11-04 17:27:04.933 +07:00 [INF] Package: '/topic/detected/string': {"MsgId":"string","CameraId":"string","PersonId":"22222","PersonType":"444444","Image":"string","DateTime":"string"}
+2024-11-04 17:27:05.061 +07:00 [INF] State: Message successfully sent to API.
+2024-11-04 17:27:10.978 +07:00 [INF] Authentication: Client faac0ad7ed1c43c98085c1301bb8f233 is accepted.
+2024-11-04 17:27:10.985 +07:00 [INF] Package: '/topic/detected/string': {"MsgId":"string","CameraId":"string","PersonId":"22222","PersonType":"444444","Image":"string","DateTime":"555555"}
+2024-11-04 17:27:11.143 +07:00 [INF] State: Message successfully sent to API.
+2024-11-04 17:35:20.147 +07:00 [INF] Starting up the application...
+2024-11-04 17:35:32.889 +07:00 [INF] Authentication: Client 6ce51d8afee74812ae3c7f99b442aa2d is accepted.
+2024-11-04 17:35:32.974 +07:00 [INF] Package: '/topic/detected/string': {"MsgId":"string","CameraId":"string","PersonId":"22222","PersonType":"444444","Image":"string","DateTime":"555555"}
+2024-11-04 17:35:33.414 +07:00 [INF] State: Message successfully sent to API.
+2024-11-04 17:35:58.291 +07:00 [INF] Authentication: Client 9ce8b20a3db64a1ba11f8e4894e68dad is accepted.
+2024-11-04 17:35:58.365 +07:00 [INF] Package: '/topic/detected/': {"MsgId":"","CameraId":"","PersonId":"","PersonType":"","Image":"","DateTime":""}
+2024-11-04 17:35:58.528 +07:00 [INF] State: Message successfully sent to API.
