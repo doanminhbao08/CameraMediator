@@ -11,6 +11,8 @@ using MQTTnet.Diagnostics;
 using MQTTnet.Client;
 using Serilog;
 using System.Text.Json;
+using CameraMediator;
+using Microsoft.Extensions.Options;
 
 namespace Worker;
 
@@ -19,7 +21,12 @@ namespace Worker;
 internal class MqttServer
 {
 
+	private readonly MqttSettings _mqttSettings;
 
+	public MqttServer(IOptions<MqttSettings> mqttSettings)
+	{
+		_mqttSettings = mqttSettings.Value;
+	}
 	public class CameraMessage
 	{
 		public string? person_id { get; set; }
@@ -42,7 +49,7 @@ internal class MqttServer
 		return cameraMessage;
 	}
 
-	public static async Task Run_Minimal_Server()
+	public async Task Run_Minimal_Server()
 	{
 		/*
          * This sample starts a simple MQTT server which will accept any TCP connection.
@@ -54,7 +61,7 @@ internal class MqttServer
 		// The default endpoint is NOT encrypted!
 		// Use the builder classes where possible.
 		var mqttServerOptions = new MqttServerOptionsBuilder().WithDefaultEndpoint()
-			.WithDefaultEndpointPort(1886).Build();
+			.WithDefaultEndpointPort(_mqttSettings.Port).Build();
 
 		// The port can be changed using the following API (not used in this example).
 		// new MqttServerOptionsBuilder()
@@ -71,7 +78,7 @@ internal class MqttServer
 			mqttServer.ValidatingConnectionAsync += async context =>
 			{
 				// Kiểm tra username và password
-				if (context.UserName != "yourUsername" || context.Password != "yourPassword")
+				if (context.UserName != _mqttSettings.Username || context.Password != _mqttSettings.Password)
 				{
 					context.ReasonCode = MQTTnet.Protocol.MqttConnectReasonCode.BadUserNameOrPassword;
 					Console.WriteLine($"Client {context.ClientId} isn't accepted.");
@@ -155,7 +162,7 @@ internal class MqttServer
 
 
 				// URL của endpoint API
-				var apiUrl = " http://hrmapi.cax.iguidevietnam.com/hanethook"; // Thay đổi thành URL thực tế của bạn
+				var apiUrl = _mqttSettings.ApiUrl; // Thay đổi thành URL thực tế của bạn
 
 				try
 				{

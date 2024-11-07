@@ -1,14 +1,11 @@
-﻿using Serilog;
+﻿using CameraMediator;
+using Serilog;
 using Worker;
-
-
 
 public class Program
 {
-	public static void Main(string[] args)
+	public static async Task Main(string[] args) // Đảm bảo Main là async và trả về Task
 	{
-
-		
 		// Cấu hình Serilog
 		Log.Logger = new LoggerConfiguration()
 			.MinimumLevel.Debug()
@@ -18,8 +15,16 @@ public class Program
 		try
 		{
 			Log.Information("Starting up the application...");
-			MqttServer.Run_Minimal_Server().Wait();
-			CreateHostBuilder(args).Build().Run();
+
+			var host = CreateHostBuilder(args).Build();
+
+			// Lấy MqttServer từ DI container
+			var mqttServer = host.Services.GetRequiredService<MqttServer>();
+
+			// Gọi phương thức Run_Minimal_Server() từ instance của MqttServer
+			await mqttServer.Run_Minimal_Server(); // Dùng await trong async method
+
+			await host.RunAsync();
 		}
 		catch (Exception ex)
 		{
@@ -33,9 +38,14 @@ public class Program
 
 	public static IHostBuilder CreateHostBuilder(string[] args) =>
 		Host.CreateDefaultBuilder(args)
-			.UseSerilog() // Sử dụng Serilog cho logging
+			.ConfigureAppConfiguration((context, config) =>
+			{
+				config.AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
+			})
+			.UseSerilog()
 			.ConfigureServices((hostContext, services) =>
 			{
-				// Cấu hình các dịch vụ tại đây
+				services.Configure<MqttSettings>(hostContext.Configuration.GetSection("MqttSettings"));
+				services.AddSingleton<MqttServer>();
 			});
 }

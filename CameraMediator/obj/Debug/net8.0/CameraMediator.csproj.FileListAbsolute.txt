@@ -54,3 +54,4 @@ C:\Users\ADMIN\source\repos\CameraMediator\CameraMediator\bin\Debug\net8.0\Seril
 C:\Users\ADMIN\source\repos\CameraMediator\CameraMediator\bin\Debug\net8.0\Serilog.Extensions.Logging.dll
 C:\Users\ADMIN\source\repos\CameraMediator\CameraMediator\bin\Debug\net8.0\Serilog.Settings.Configuration.dll
 C:\Users\ADMIN\source\repos\CameraMediator\CameraMediator\bin\Debug\net8.0\Serilog.Sinks.Console.dll
+C:\Users\ADMIN\source\repos\CameraMediator\CameraMediator\obj\Debug\net8.0\CameraMediator.sourcelink.json

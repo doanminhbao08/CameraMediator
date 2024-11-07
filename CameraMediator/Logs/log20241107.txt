@@ -1,0 +1,12 @@
+2024-11-07 09:26:09.268 +07:00 [INF] Starting up the application...
+2024-11-07 09:27:35.128 +07:00 [INF] Starting up the application...
+2024-11-07 09:42:19.742 +07:00 [INF] Starting up the application...
+2024-11-07 09:43:16.819 +07:00 [INF] Authentication: Client bf43957fac1a452e84ba55f5e720ea85 is accepted.
+2024-11-07 09:43:16.984 +07:00 [INF] Package: '/topic/detected/string': {"MsgId":"string","CameraId":"string","PersonId":"string","PersonType":"string","Image":"string","DateTime":"string"}
+2024-11-07 09:43:17.709 +07:00 [INF] State: Message successfully sent to API.
+2024-11-07 09:47:18.575 +07:00 [INF] Authentication: Client 715b64e4998742f2894dbb1390bfc388 is accepted.
+2024-11-07 09:47:18.697 +07:00 [INF] Package: '/topic/detected/string': {"MsgId":"string","CameraId":"string","PersonId":"string","PersonType":"string","Image":"string","DateTime":"string"}
+2024-11-07 09:47:18.958 +07:00 [INF] State: Message successfully sent to API.
+2024-11-07 09:50:47.576 +07:00 [INF] Authentication: Client 4eb322494f2d4088bda4c83326cdc533 is accepted.
+2024-11-07 09:50:47.661 +07:00 [INF] Package: '/topic/detected/string': {"MsgId":"string","CameraId":"string","PersonId":"string","PersonType":"string1111","Image":"string","DateTime":"string"}
+2024-11-07 09:50:49.995 +07:00 [INF] State: Message successfully sent to API.

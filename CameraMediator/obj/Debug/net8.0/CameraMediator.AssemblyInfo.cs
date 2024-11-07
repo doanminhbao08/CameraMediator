@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CameraMediator")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7abfc1d638e7546f7c43e5a68baa03ce089f593d")]
 [assembly: System.Reflection.AssemblyProductAttribute("CameraMediator")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CameraMediator")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
